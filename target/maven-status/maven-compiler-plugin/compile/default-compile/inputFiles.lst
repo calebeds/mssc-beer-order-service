@@ -13,9 +13,13 @@
 /home/stefanini/Workspaces/java-workspace/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/web/controllers/BeerOrderController.java
 /home/stefanini/Workspaces/java-workspace/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/web/mappers/DateMapper.java
 /home/stefanini/Workspaces/java-workspace/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/repositories/BeerOrderLineRepository.java
+/home/stefanini/Workspaces/java-workspace/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/services/beer/BeerService.java
 /home/stefanini/Workspaces/java-workspace/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/repositories/CustomerRepository.java
+/home/stefanini/Workspaces/java-workspace/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/web/model/BeerDto.java
 /home/stefanini/Workspaces/java-workspace/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/web/model/OrderStatusEnum.java
+/home/stefanini/Workspaces/java-workspace/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/web/mappers/BeerOrderLineMapperDecorator.java
 /home/stefanini/Workspaces/java-workspace/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/web/model/BaseItem.java
+/home/stefanini/Workspaces/java-workspace/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/services/beer/BeerServiceImpl.java
 /home/stefanini/Workspaces/java-workspace/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/services/BeerOrderServiceImpl.java
 /home/stefanini/Workspaces/java-workspace/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/services/TastingRoomService.java
 /home/stefanini/Workspaces/java-workspace/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/web/model/OrderStatusUpdate.java
