@@ -10,6 +10,7 @@
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/web/model/OrderStatusEnum.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/bootstrap/BeerOrderBootStrap.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/web/mappers/BeerOrderMapper.java
+/home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/domain/BeerOrderStatusEnum.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/repositories/BeerOrderLineRepository.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/domain/BeerOrderLine.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/web/model/OrderStatusUpdate.java
@@ -23,7 +24,6 @@
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/BeerOrderServiceApplication.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/services/beer/BeerServiceImpl.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/domain/Customer.java
-/home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/domain/OrderStatusEnum.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/web/mappers/BeerOrderLineMapper.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/web/mappers/DateMapper.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/web/mappers/BeerOrderLineMapperDecorator.java
