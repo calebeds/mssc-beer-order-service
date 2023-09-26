@@ -1,4 +1,5 @@
 guru/sfg/beer/order/service/repositories/BeerOrderRepository.class
+guru/sfg/beer/order/service/sm/BeerOrderStateMachineConfig.class
 guru/sfg/beer/order/service/domain/BeerOrder.class
 guru/sfg/beer/order/service/repositories/CustomerRepository.class
 guru/sfg/beer/order/service/config/JmsConfig.class
@@ -28,6 +29,7 @@ guru/sfg/beer/order/service/web/model/BaseItem.class
 guru/sfg/beer/order/service/BeerOrderServiceApplication.class
 guru/sfg/beer/order/service/domain/Customer$CustomerBuilder.class
 guru/sfg/beer/order/service/web/model/BeerOrderDto$BeerOrderDtoBuilder.class
+guru/sfg/beer/order/service/domain/BeerOrderEventEnum.class
 guru/sfg/beer/order/service/domain/BeerOrderLine$BeerOrderLineBuilder.class
 guru/sfg/beer/order/service/domain/BeerOrderLine.class
 guru/sfg/beer/order/service/services/beer/BeerServiceImpl.class
