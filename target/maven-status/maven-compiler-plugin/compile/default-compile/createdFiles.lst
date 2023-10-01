@@ -5,7 +5,9 @@ guru/sfg/beer/order/service/domain/BeerOrder.class
 guru/sfg/beer/order/service/repositories/CustomerRepository.class
 guru/sfg/beer/order/service/domain/BeerOrder$BeerOrderBuilder.class
 guru/sfg/beer/order/service/web/mappers/BeerOrderLineMapperImpl_.class
+guru/sfg/brewery/model/events/AllocateOrderResult$AllocateOrderResultBuilder.class
 guru/sfg/brewery/model/events/ValidateOrderRequest.class
+guru/sfg/beer/order/service/services/listeners/BeerOrderAllocationResultListener.class
 guru/sfg/brewery/model/BeerOrderPagedList.class
 guru/sfg/beer/order/service/web/mappers/BeerOrderLineMapper.class
 guru/sfg/beer/order/service/services/BeerOrderManagerImpl.class
@@ -32,6 +34,7 @@ guru/sfg/beer/order/service/services/beer/BeerService.class
 guru/sfg/brewery/model/CustomerDto$CustomerDtoBuilder.class
 guru/sfg/brewery/model/OrderStatusUpdate$OrderStatusUpdateBuilder.class
 guru/sfg/beer/order/service/services/BeerOrderManager.class
+guru/sfg/brewery/model/events/AllocateOrderResult.class
 guru/sfg/brewery/model/BeerDto.class
 guru/sfg/beer/order/service/repositories/BeerOrderLineRepository.class
 guru/sfg/beer/order/service/services/TastingRoomService.class
