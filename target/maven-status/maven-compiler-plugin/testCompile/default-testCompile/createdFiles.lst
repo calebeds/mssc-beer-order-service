@@ -1,1 +1,3 @@
 guru/sfg/beer/order/service/BeerOrderServiceApplicationTests.class
+guru/sfg/beer/order/service/services/BeerOrderManagerImplIT$RestTemplateBuilderProvider.class
+guru/sfg/beer/order/service/services/BeerOrderManagerImplIT.class

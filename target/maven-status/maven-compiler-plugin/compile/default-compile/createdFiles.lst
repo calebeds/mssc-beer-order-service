@@ -25,6 +25,7 @@ guru/sfg/beer/order/service/domain/Customer.class
 guru/sfg/beer/order/service/web/mappers/DateMapper.class
 guru/sfg/beer/order/service/sm/BeerOrderStateChangeInterceptor.class
 guru/sfg/beer/order/service/web/mappers/BeerOrderMapper.class
+guru/sfg/brewery/model/BeerPagedList.class
 guru/sfg/beer/order/service/sm/BeerOrderStateMachineConfig.class
 guru/sfg/beer/order/service/config/JmsConfig.class
 guru/sfg/beer/order/service/services/BeerOrderService.class
