@@ -16,6 +16,8 @@ import org.springframework.statemachine.support.DefaultStateMachineContext;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityManager;
+import javax.swing.text.html.parser.Entity;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -28,6 +30,7 @@ public class BeerOrderManagerImpl implements BeerOrderManager {
     private final StateMachineFactory<BeerOrderStatusEnum, BeerOrderEventEnum> stateMachineFactory;
     private final BeerOrderRepository beerOrderRepository;
     private final BeerOrderStateChangeInterceptor beerOrderStateChangeInterceptor;
+    private final EntityManager entityManager;
 
     @Transactional
     @Override
@@ -45,6 +48,8 @@ public class BeerOrderManagerImpl implements BeerOrderManager {
     public void processValidationResult(UUID beerOrderId, Boolean isValid) {
         log.debug("Process Validation Result for beerOrderId: " + beerOrderId + " Valid? " + isValid);
 
+        entityManager.flush();
+
         Optional<BeerOrder> beerOrderOptional = beerOrderRepository.findById(beerOrderId);
 
         beerOrderOptional.ifPresentOrElse(beerOrder -> {
@@ -59,7 +64,6 @@ public class BeerOrderManagerImpl implements BeerOrderManager {
                 sendBeerOrderEvent(beerOrder, BeerOrderEventEnum.VALIDATION_FAILED);
             }
         }, () -> log.error("Order Not Found. Id: " + beerOrderId));
-
     }
 
     @Override
@@ -90,7 +94,7 @@ public class BeerOrderManagerImpl implements BeerOrderManager {
         allocatedOrderOptional.ifPresentOrElse(allocatedOrder -> {
             allocatedOrder.getBeerOrderLines().forEach(beerOrderLine -> {
                 beerOrderDto.getBeerOrderLines().forEach(beerOrderLineDto -> {
-                    if(beerOrderLine.getId().equals(beerOrderLineDto.getId())){
+                    if(beerOrderLine.getId() .equals(beerOrderLineDto.getId())){
                         beerOrderLine.setQuantityAllocated(beerOrderLineDto.getQuantityAllocated());
                     }
                 });
@@ -120,9 +124,15 @@ public class BeerOrderManagerImpl implements BeerOrderManager {
         }, () -> log.error("Order Not Found. Id: " + id));
     }
 
+    @Override
+    public void cancelOrder(UUID id) {
+        beerOrderRepository.findById(id).ifPresentOrElse(beerOrder -> {
+            sendBeerOrderEvent(beerOrder, BeerOrderEventEnum.CANCEL_ORDER);
+        }, () -> log.error("Order Not Found. Id: " + id));
+    }
 
-    private void sendBeerOrderEvent(BeerOrder beerOrder, BeerOrderEventEnum eventEnum) {
-        StateMachine<BeerOrderStatusEnum, BeerOrderEventEnum> sm = this.build(beerOrder);
+    private void sendBeerOrderEvent(BeerOrder beerOrder, BeerOrderEventEnum eventEnum){
+        StateMachine<BeerOrderStatusEnum, BeerOrderEventEnum> sm = build(beerOrder);
 
         Message msg = MessageBuilder.withPayload(eventEnum)
                 .setHeader(ORDER_ID_HEADER, beerOrder.getId().toString())
@@ -131,7 +141,7 @@ public class BeerOrderManagerImpl implements BeerOrderManager {
         sm.sendEvent(msg);
     }
 
-    private StateMachine<BeerOrderStatusEnum, BeerOrderEventEnum> build(BeerOrder beerOrder) {
+    private StateMachine<BeerOrderStatusEnum, BeerOrderEventEnum> build(BeerOrder beerOrder){
         StateMachine<BeerOrderStatusEnum, BeerOrderEventEnum> sm = stateMachineFactory.getStateMachine(beerOrder.getId());
 
         sm.stop();

@@ -73,10 +73,6 @@ public class BeerOrderServiceImpl implements BeerOrderService {
     public BeerOrderDto placeOrder(UUID customerId, BeerOrderDto beerOrderDto) {
         Optional<Customer> customerOptional = customerRepository.findById(customerId);
 
-        customerOptional.ifPresentOrElse(customer -> {
-
-        }, () -> {});
-
         if (customerOptional.isPresent()) {
             BeerOrder beerOrder = beerOrderMapper.dtoToBeerOrder(beerOrderDto);
             beerOrder.setId(null); //should not be set by outside client
