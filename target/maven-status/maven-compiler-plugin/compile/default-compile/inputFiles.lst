@@ -9,6 +9,7 @@
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/services/TastingRoomService.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/config/JmsConfig.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/brewery/model/events/AllocateOrderRequest.java
+/home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/sm/actions/AllocationFailureAction.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/brewery/model/events/AllocateOrderResult.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/brewery/model/BeerDto.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/bootstrap/BeerOrderBootStrap.java
@@ -16,6 +17,7 @@
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/domain/BeerOrderStatusEnum.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/repositories/BeerOrderLineRepository.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/domain/BeerOrderLine.java
+/home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/brewery/model/events/AllocationFailureEvent.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/repositories/CustomerRepository.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/sm/actions/AllocateOrderAction.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/services/BeerOrderManagerImpl.java
@@ -27,6 +29,7 @@
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/brewery/model/events/ValidateOrderRequest.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/brewery/model/events/ValidateOrderResult.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/services/BeerOrderService.java
+/home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/sm/actions/ValidationFailureAction.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/services/BeerOrderManager.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/BeerOrderServiceApplication.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/services/beer/BeerServiceImpl.java
