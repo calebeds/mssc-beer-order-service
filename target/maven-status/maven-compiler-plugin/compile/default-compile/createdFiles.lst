@@ -31,6 +31,7 @@ guru/sfg/beer/order/service/domain/Customer.class
 guru/sfg/beer/order/service/web/mappers/DateMapper.class
 guru/sfg/beer/order/service/sm/BeerOrderStateChangeInterceptor.class
 guru/sfg/beer/order/service/web/mappers/BeerOrderMapper.class
+guru/sfg/beer/order/service/config/LocalDiscovery.class
 guru/sfg/brewery/model/events/AllocationFailureEvent.class
 guru/sfg/beer/order/service/sm/actions/DeallocateOrderAction.class
 guru/sfg/brewery/model/BeerPagedList.class

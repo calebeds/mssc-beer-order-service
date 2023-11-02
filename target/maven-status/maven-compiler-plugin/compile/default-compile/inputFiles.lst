@@ -1,4 +1,5 @@
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/repositories/BeerOrderRepository.java
+/home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/config/LocalDiscovery.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/services/listeners/BeerOrderAllocationResultListener.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/brewery/model/BeerOrderPagedList.java
 /home/stefanini/Workspaces/java-workspace/mssc-brewery-ws/mssc-beer-order-service/src/main/java/guru/sfg/beer/order/service/config/TaskConfig.java
